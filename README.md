@@ -10,3 +10,15 @@
  - MVC(Model View Controller)
  - MVP(Model View Presenter)
  - MVVM(Model View ViewModel)
+
+
+ ## Programming Paradigm
+  - Imperative Programming 
+  - Declarative Programming 
+  - Object Oriented Programming  
+    - Abstraction
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+  - SOLID 
+  - 

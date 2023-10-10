@@ -12,7 +12,7 @@ Programming Paradigm vs Design Patterns:
 - **Higher Order Functions(고차함수)**: 다른 함수를 매개변수로 받아들이거나, 함수를 결과로 반환하는 함수
 
 ### 1. Imperative Programming (명령형)
-
+- ex) OOP, Procedural
 - 단계별로 프로그램이 어떻게 동작해야 하는지를 지정합
 - **어떻게**: 어떻게 프로그램이 돌아갔으면 하는지.
 
@@ -34,6 +34,7 @@ console.log(result) // Output: [ 6, 7, 8, 9 ]
 - 선언형 프로그래밍은 "무엇"을 해야 하는지에 중점을 둔다.
 - 작은 함수들을 블럭 처럼 쌓아 로직을 구현하고, 재사용성을 높인다.
 - **무엇을**: 어떤 결과값을 원하는지.
+
 
 ```python
 pourIngredients()
@@ -72,3 +73,7 @@ cookAndLetChill()
   - DIP(Dependency Inversion Principle): 의존 역전 원칙
 
     - 구현 클래스에 의존하지 말고, 인터페이스에 의존
+
+- 4) ### Procedural Programming(절차지향프로그래밍)
+    - 물이 위에서 아래로 흐르는 것처럼 순차적인 처리가 중요시 되며 프로그램 전체가 유기적으로 연결되도록 만드는 프로그래밍 기법
+    - Looping in procedural languages is done via a for/while/foreach loop. A purely functional language will not have any loop functionality; looping will be done via recursion, where you call a function from within itself. So in procedural if you want to loop through an array you might have
