@@ -20,5 +20,3 @@
     - Encapsulation
     - Inheritance
     - Polymorphism
-  - SOLID 
-  - 
