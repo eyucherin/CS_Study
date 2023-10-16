@@ -1,0 +1,64 @@
+- 인터넷 통신
+- IP(Internet Protocol)
+- TCP/UDP
+
+## 인터넷 프로토콜의 스택 4계층: 
+ <img src="https://velog.velcdn.com/images%2Fjyo925%2Fpost%2F909e84e7-a6fc-4508-b613-eedaf3bc4a15%2Fimage.png" alt="MarineGEO circle logo" style="height: 200px; width:300px;"/>
+
+## IP(Internet Protocol)
+- 모든 컴퓨터가 IP주소를 가지고있음.
+- IP의 역활:
+  - 지정한 IP 주소에 데이터 전달
+  - 패킷이라는(Packet) 통신 단위로 데이터 전달
+- IP Packet 정보 
+     - 규칙: 
+        - 나의 IP 
+        - 목적지 IP 
+        - 전송 데이터. 
+- IP 패킷을 던지면 여러 노드를 통해 최종 목적지 도착. 
+- IP 프로토콜의 한계
+     - 비연결성 --> 패킷을 받을 대상이 없을때
+     - 비신뢰성 --> 중간에 패킷이 사라지건, 순서대로 오지않을떄 
+     - 프로그램 구분 --> 같은 IP를 사용하는 서버에서 통신하는 애플리케이션이 둘 이상일때
+
+## TCP/ UDP 
+ ### TCP/IP 
+  - 신뢰할 수 있는 프로토콜 
+  - #### TCP/IP  Packet 정보
+    - 나의 IP, 목적지 IP 
+    - 출발지 PORT, 목적지 PORT, 전송 제어 순서, 검증 정보.
+    - 전송 데이터.
+  - #### 특징: 
+     - 정송 제어 프러토콜
+     - 연결지향 - TCP 3 way handshake: 먼저 연결하고 메세지 보냄 
+     - 데이터 전달 보증
+     - 순서 보장 
+
+  - #### TCP 3 way handshake(클라이언트와 서버가 서로 믿을 수 있겠금 연결시켜줌)
+    - (SYNC) 클라이언트에서 서버로 SYN이라는 메세지 보냄
+    - (SYNC + ACK) 서버에서 ACK 요청을 수락하고 클라이언트한테 SYNC 메세지 보냄
+    - (ACK)클라이언트가 서버 요청 수락함
+
+    - <img src="https://scaler.com/topics/images/steps-of-a-3-way-handshake-for-terminating-the-connection.webp" alt="MarineGEO circle logo" style="height: 200px; width:250px;"/>
+
+ - #### 데이터 전당 보증:
+     - 클라이언트에서 데이터 전송을 할때  서버에서 전달 받았다고 보내줌.
+
+- #### 순서 보장: 
+     - 클라이언트가 패킷 1,2,3,4 보냄 
+     - 서버에 1,3,2,4 순서로 도착한. 
+     - 서버에서 3부터 다 버리고 클라이언트에 2번부터 다시 보내달라고 한다. 
+
+### UDP 
+ - IP 와 거의 같다. 
+     - PORT 추가.
+ - TCP 3 wat handshake X 
+ - 데이터 전달 보증 X 
+ - 순서 보장 X
+ - 장점: 
+     - 3 way handshake --> 시간이 쫌 걸린다.
+     - UDP는 빠르다. 
+
+
+
+
