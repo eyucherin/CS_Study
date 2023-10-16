@@ -1,6 +1,8 @@
 - 인터넷 통신
 - IP(Internet Protocol)
 - TCP/UDP
+- PORT 
+- DNS
 
 ## 인터넷 프로토콜의 스택 4계층: 
  <img src="https://velog.velcdn.com/images%2Fjyo925%2Fpost%2F909e84e7-a6fc-4508-b613-eedaf3bc4a15%2Fimage.png" alt="MarineGEO circle logo" style="height: 200px; width:300px;"/>
@@ -58,6 +60,20 @@
  - 장점: 
      - 3 way handshake --> 시간이 쫌 걸린다.
      - UDP는 빠르다. 
+
+### PORT 
+ - 비유: ip는 아파트, PORT는 몇동 몇호인지 알려줌
+ - 서버 안에서 돌아가는 애플리케이션들
+ - 패킷 정보 
+     - 출발: IP, PORT
+     - 도착: IP, PORT
+     - 데이터
+ - HTTP ::80
+ - HTTPS::443
+
+
+### DNS(Domain Name System)
+ - 도메인 명을 등록하고, IP 주소를 저장함.
 
 
 

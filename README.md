@@ -1,5 +1,13 @@
 # CS_Study
 
+## WEB 
+- Network:
+  - 인터넷 통신
+  - IP(Internet Protocol)
+  - TCP/UDP
+  - PORT 
+  - DNS
+
 ## Design Patterns 
  - Singleton Pattern 
  - Factory Pattern 
