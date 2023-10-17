@@ -14,7 +14,7 @@
 </details>
 
 <details>
- <summary><b>10/17/2023</b></summary>
+ <summary><b>10/16/2023</b></summary>
 
 - Browser 동작 원리
 
