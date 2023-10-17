@@ -41,6 +41,6 @@
 
   ## Modern Javascript Deep Dive
    - Variables 
-     - 변수 선언 초시화 할당 호이스팅
+     - 변수 선언 초기화 할당 호이스팅
    - Data Types
      - primitive type, object type
