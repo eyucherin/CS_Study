@@ -7,6 +7,9 @@
   - TCP/UDP
   - PORT 
   - DNS
+- URI
+  - URL,URN
+- 웹 브라우저 요청 흐름
 
 ## Design Patterns 
  - Singleton Pattern 
