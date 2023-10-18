@@ -10,6 +10,9 @@
 - URI
   - URL,URN
 - 웹 브라우저 요청 흐름
+- HTTP 
+  - Stateless,Connectionless
+  - HTTP Message(start,header,body)
 
 ## Design Patterns 
  - Singleton Pattern 
@@ -44,3 +47,8 @@
      - 변수 선언 초기화 할당 호이스팅
    - Data Types
      - primitive type, object type
+   - Coercion 
+     - Implicit(암묵적), Explicit(명시적)
+   - Optional Chaining 
+   - Logical Operator
+   - Nullish Coalescing(null 병합)
