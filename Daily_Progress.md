@@ -9,6 +9,11 @@
   - 자바스크립트 오셔널 체이닝 
   - 논리적 연산자
   - `??`와 `||`의 차이점
+- HTTP
+  - request response 
+  - Stateful(상태 유지), Stateless(무상태). 
+  - Connectionless
+  - HTTP Message --> Start,Header,Body
 
 </details>
 
