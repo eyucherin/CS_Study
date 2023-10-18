@@ -1,6 +1,18 @@
 매일 공부한 컨셉
 
 <details>
+ <summary><b>10/18/2023</b></summary>
+
+- Javascript Deep Dive
+  - 암묵적 타입 변환
+  - 명시적 타입 변환
+  - 자바스크립트 오셔널 체이닝 
+  - 논리적 연산자
+  - `??`와 `||`의 차이점
+
+</details>
+
+<details>
  <summary><b>10/17/2023</b></summary>
 
 - Javascript Deep Dive
