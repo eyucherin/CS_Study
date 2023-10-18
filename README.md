@@ -2,11 +2,7 @@
 
 ## WEB 
 - Network:
-  - 인터넷 통신
-  - IP(Internet Protocol)
-  - TCP/UDP
-  - PORT 
-  - DNS
+  - IP(Internet Protocol), TCP/UDP, PORT, DNS
 - URI
   - URL,URN
 - 웹 브라우저 요청 흐름
