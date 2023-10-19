@@ -1,14 +1,23 @@
 매일 공부한 컨셉
 
 <details>
+ <summary><b>10/19/2023</b></summary>
+
+- Javascript Deep Dive
+  - 객체와 원시값 차이(얕은 복사, 깊은 복사) 
+  - ES6 객체 기능(3)
+
+</details>
+
+<details>
  <summary><b>10/18/2023</b></summary>
 
 - Javascript Deep Dive
   - 암묵적 타입 변환
   - 명시적 타입 변환
   - 자바스크립트 오셔널 체이닝 
-  - 논리적 연산자
-  - `??`와 `||`의 차이점
+  - 논리적 연산자 
+  - 단축평가: `??`와 `||`의 차이점
 - HTTP
   - request response 
   - Stateful(상태 유지), Stateless(무상태). 
