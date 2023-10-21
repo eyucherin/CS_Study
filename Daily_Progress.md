@@ -22,6 +22,8 @@
     - Store 
     - Controller/Control URI
 
+- AJAX
+
 </details>
 
 <details>

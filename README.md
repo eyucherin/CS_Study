@@ -16,6 +16,7 @@
   - Collection
   - Store
   - Control URI
+- AJAX
 
 ## Design Patterns 
  - Singleton Pattern 
