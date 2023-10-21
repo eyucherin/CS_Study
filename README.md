@@ -9,6 +9,13 @@
 - HTTP 
   - Stateless,Connectionless
   - HTTP Message(start,header,body)
+- HTTP Methods 
+  - GET,POST, PUT, PATCH, DELETE
+- HTML Forms 
+- Put vs Post 
+  - Collection
+  - Store
+  - Control URI
 
 ## Design Patterns 
  - Singleton Pattern 
@@ -48,3 +55,7 @@
    - Optional Chaining 
    - Logical Operator
    - Nullish Coalescing(null 병합)
+   - Objects
+   - Functions
+   - Execution Context && Call Stack 
+   - Problems with global context
