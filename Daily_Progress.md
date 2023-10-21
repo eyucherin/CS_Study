@@ -1,6 +1,30 @@
 매일 공부한 컨셉
 
 <details>
+ <summary><b>10/20/2023</b></summary>
+
+- Javascript Deep Dive
+  - 실행 컨텍스트
+  - 실행 콘텍스트 type
+  - 실행 콘텍스트 컴포넌트
+  - Call Stack
+  - 코드의 `평가`와 `실행`
+  - 전역 변수의 문제점
+
+- HTTP 
+  - 클라이언트에서 서버로 데이터 전송
+    - 4가지 상황(정적,동적,HTML FORM,파일 전송)
+    - Content-Type
+  - API 설계
+    - POST 기반 등록
+    - PUT 기반 등록
+    - Collection 
+    - Store 
+    - Controller/Control URI
+
+</details>
+
+<details>
  <summary><b>10/19/2023</b></summary>
 
 - Javascript Deep Dive
@@ -13,6 +37,13 @@
 - React 
   - React가 해결하고자 하는 문제
   - React특징
+
+- HTTP
+  - GET/PUT/POST/DELETE/PATCH 
+  - HTTP 속성 
+    - `Safe(안전)`
+    - `Idempotent(멱등)`
+    - `Cacheable(캐시가능)`
 
 </details>
 
