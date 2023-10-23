@@ -17,6 +17,10 @@
   - Store
   - Control URI
 - AJAX
+- HTTP 상태코드
+  - 100,200,300,400,500
+- HTTP 헤더
+  - 헤더 협상, 전송 하는 방식
 
 ## Design Patterns 
  - Singleton Pattern 
@@ -60,3 +64,8 @@
    - Functions
    - Execution Context && Call Stack 
    - Problems with global context
+   - Execution Context/Lexical Environment
+   - Property Attribute
+   - First Class Object
+   - Class
+   - Prototype

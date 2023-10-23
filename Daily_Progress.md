@@ -1,11 +1,53 @@
 매일 공부한 컨셉
 
 <details>
+ <summary><b>10/22/2023</b></summary>
+
+- Javascript Deep Dive
+  - 클래스
+  - 상속과 프로토타입
+  - 함수 객체의 prototype 프로퍼티
+  - 프로토타입 체인
+  - 오버라이딩
+  - 오버로딩
+
+- HTTP
+  - HTTP 헤더
+  - Content Type
+  - Content Encoding
+  - Content Language
+  - Content Length
+  - 헤더 협상
+  - 전송 하는 방식
+
+</details>
+
+
+<details>
+ <summary><b>10/21/2023</b></summary>
+
+- Javascript Deep Dive
+  - 프로퍼티 어트리뷰트와 프로퍼티 디스크립터 객체
+  - 생성자 함수에 의한 객체
+  - 1급객체
+  - 함수가 일급객체이기 때문에 할 수 있는 것은 무엇인가?
+  - __ proto__ 접근자 프로퍼티
+
+
+- HTTP 
+  - HTTP 상태코드 
+    - 100,200,300,400,500
+
+
+</details>
+
+<details>
  <summary><b>10/20/2023</b></summary>
 
 - Javascript Deep Dive
   - 실행 컨텍스트
   - 실행 콘텍스트 type
+  - 랙시컬 환경
   - 실행 콘텍스트 컴포넌트
   - Call Stack
   - 코드의 `평가`와 `실행`
