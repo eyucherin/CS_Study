@@ -1,6 +1,61 @@
 매일 공부한 컨셉
 
 <details>
+ <summary><b>10/26/2023</b></summary>
+
+- Javascript Deep Dive
+  -  브라우저 동작 원리
+  - `HTTP 1.1`과 `HTTP 2.0`의 차이점
+  - `reflow`과 `repaint`의 차이점
+  - async/defer
+
+</details>
+
+<details>
+ <summary><b>10/25/2023</b></summary>
+
+- Javascript Deep Dive
+  - Arrays, numbers 
+
+</details>
+
+<details>
+ <summary><b>10/24/2023</b></summary>
+
+- Javascript Deep Dive
+  - class 
+    - 프로토타입 기반 객체지향 언어
+    - 클래스와 생성자 차이 
+    - 클라스 호이스팅 
+    - 정적 메서드와 프로토타입 메서드의 차이
+  - arrow functions 
+    - non-constructor
+    - Prototype 프로퍼티가 없다 
+    - 화살표 함수는 상위 스코프의 this를 가리킨다.
+
+- HTTP
+  - Local Storage
+  - Session Storage - 
+
+</details>
+
+<details>
+ <summary><b>10/23/2023</b></summary>
+
+- Javascript Deep Dive
+  - Strict Mode 
+  - Closure
+    - scope chain 
+    - [[Environment]]
+    - 캡슐화와 은닉
+
+- HTTP
+  - 쿠키 
+    - 쿠키 헤더, 무상태, 쿠키는 무엇인가, 쿠키 생명주기. 
+
+</details>
+
+<details>
  <summary><b>10/22/2023</b></summary>
 
 - Javascript Deep Dive

@@ -21,6 +21,12 @@
   - 100,200,300,400,500
 - HTTP 헤더
   - 헤더 협상, 전송 하는 방식
+- 쿠키
+  - 쿠키 헤더, 쿠키 생명주기, 쿠키 도메인
+- 웹 스토리지 
+  - 로컬,세션, 
+- 캐쉬
+- CORS
 
 ## Design Patterns 
  - Singleton Pattern 
@@ -69,3 +75,13 @@
    - First Class Object
    - Class
    - Prototype
+   - Strict 
+   - Closure 
+   - Class
+   - Arrow Functions 
+   - Arrays 
+   - Numbers
+   - HTTP 1 and 2 
+   - Reflow and Repaint 
+   - Async/Defer 
+   - 
