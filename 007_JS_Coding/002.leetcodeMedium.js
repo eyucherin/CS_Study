@@ -67,3 +67,79 @@ const longestPalindrome = (s) =>{
 
     return res;
 }
+
+
+//98 Validate Binary Search Tree
+//input = head 
+//output = 주어진 트리가 BST가 맞는지 확인하는 불리언값. 
+
+const isValidBST = (root) =>{
+
+    const search = (node,left,right) =>{
+        if(!node) return true;
+        if(!(left < node.val) || !(node.val < right)){
+            return false;
+        }
+        return search(node.left,left,node.val) && search(node.right,node.val,right)
+    }
+
+    return search(root,-Infinity,Infinity)
+}
+
+//102 Binary Tree Level order traversal
+//input = root 
+//output = 이진 리스트로 구현된 level order traversal
+
+const levelOrder =(root) =>{
+    if(!root) return[]
+
+    let res = []
+    let q = [root]
+
+    while(q.length){
+        let subRes = []
+        let size = q.length
+
+        for(let i = 0 ; i < size ; i++){
+            const current = q.shift()
+            subRes.push(current.val)
+
+            if(current.left) subRes.push(current.left)
+            if(current.right) subRes.push(current.right)
+        }
+        
+        res.push(subRes)
+    }
+
+    return res;
+}
+
+//103 Binary Tree ZigZag Level Traversal
+//input = root
+//output = Level order traversal하면서 다음래밸의 값들을 뒤집어놓기
+
+const zigZagLevel = (root) =>{
+    if(!root) return[]
+
+    let res = []
+    let q = [root]
+    let zigZag = false
+
+    while(q.length){
+        let subRes = []
+        const size = q.length
+
+        for(let i = 0; i<size; i++){
+            const current = q.shift()
+            subRes.push(current.val)
+            if(current.left) q.push(current.left)
+            if(current.right) q.push(current.right)
+        }
+
+        if(!zigZag) res.push(subRes)
+        else res.push(subRes.reverse())
+        zigZag = !zigZag
+    }
+
+    return res
+}
