@@ -90,3 +90,17 @@ const isBalanced = (root) =>{
     }
     return search(root) != -1
 }
+
+//112 Path Sum 
+//input: root노드,targetSum
+//output: root노드에서 부터 마지막노드까지, targetSum까지 더해지는 격로가 있는지 확인하는 불리언값
+
+const pathSum = (root,targetSum) =>{
+    const search = (node,cS) =>{
+        if(!node) return false
+        if(!node.left && !node.right && node.val + cS == targetSum) return true
+        return search(node.left,cS + node.val) || search(node.right,cS + node.val)
+    }
+
+    return search(root,0);
+}
