@@ -10,6 +10,71 @@ const twoSum = (nums,target) =>{
     }
 }
 
+//49. Group Anagrams
+//input = array of strings
+//ouput = char 숫자가 똑같은 string들의 array 
+
+const groupAnagrams = (strs) =>{
+    let dic = {}
+
+    for (let i of strs){
+        let sortedStr = i.split("").sort().join("")
+
+        if(!(sortedStr in dic)){
+            dic[sortedStr] = []
+        }
+        dic[sortedStr].append(i)
+    }
+
+    return Object.values(dic);
+
+}
+
+
+// 217 Contains Duplicate 
+//input: nums array
+//output: 반복된 숫자가 있는지 확인하는 불리언 값.
+var containsDuplicate = function(nums) {
+    let seen = new Set()
+
+    for(let i of nums){
+        if(seen.has(i)){
+            return true
+        }
+        seen.add(i)
+    }
+    return false
+};
+
+
+//242 Valid Anagram 
+//input = string s, string t
+//output = 둘다 같은 수의 문자들을 가지고있는지 확인하는 불리언 값 
+
+let isAnagram = function(s,t){
+    if(s.length != t.length) return false
+    let dic = {}
+
+    for(let i of s){
+        dic[i] = (dic[i] ?? 0) + 1
+    }
+
+    for(let i of t){
+        if (!(i in dic)){
+            return false
+        }
+        dic[i] -= 1 
+
+        if(dic[i] == 0){
+            delete dic[i]
+        }
+    }
+
+    return true
+}
+
+
+
 //501.Find Mode in Binary Search Tree
 
 //input = root

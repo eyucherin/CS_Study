@@ -68,6 +68,30 @@ const longestPalindrome = (s) =>{
     return res;
 }
 
+//238. Product of Array Except Self
+//input = int array 하나 (nums)
+//output = num[i]를 제외한 모든 숫자의 곱셈.
+
+let productExceptSelf = (nums) =>{
+    let prefix = [1];
+    let postfix = [1];
+
+    for (let i = 0; i < nums.length - 1; i++){
+        let lastIndx = nums.length -1 
+
+        prefix.push(nums[i] * prefix[prefix.length - 1])
+        postfix.push(nums[lastIndx]* postfix[postfix.length - 1])
+    }
+
+    postfix = postfix.reverse()
+
+    for(let i = 0; i < postfix.length ; i++){
+        prefix[i] = prefix[i] * postfix[i]
+    }
+
+    return prefix
+}
+
 
 //98 Validate Binary Search Tree
 //input = head 
