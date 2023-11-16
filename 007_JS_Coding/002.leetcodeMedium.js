@@ -138,6 +138,33 @@ const levelOrder =(root) =>{
     return res;
 }
 
+//128. Longest Consecutive Sequence
+//input = arr
+//output = arr안에 consecutive수들이 제일 맣은 수
+
+let longestConsecutiveSequence = (arr) => {
+    let seen = new Set();
+    for(let i of arr){
+        seen.add(i)
+    }
+
+    let res = -Infinity;
+
+    for(let i of arr){
+        let current = i; 
+        let count = 0 
+        while(!(seen.has(i-1))&& seen.has(current)){
+            count ++;
+            current++;
+        }
+
+        res = Math.max(res,count)
+    }
+    if(res == -Infinity) return 0
+    return res
+}
+
+
 //103 Binary Tree ZigZag Level Traversal
 //input = root
 //output = Level order traversal하면서 다음래밸의 값들을 뒤집어놓기
