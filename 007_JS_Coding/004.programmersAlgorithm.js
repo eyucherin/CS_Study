@@ -104,3 +104,84 @@ function solution(arr)
     
     return answer;
 }
+
+//스택과 큐 -- 같은 숫자는 싫어
+//input --> process와 speed
+//output
+
+function solution(progress,speed){
+    let stack = []
+    for(let i = 0; i < progress.length ;i++){
+        let cP = progress[i]
+        let cS = speed[i]
+        let cT = Math.ceil((100-cP)/cS)
+        if(stack.length && stack[stack.length -1][0] >= cT){
+            stack[stack.length-1][1] +=1
+        }
+        else{
+            stack.push([cT,1])
+        }
+    }
+    return stack.map((val)=>val[1])
+}
+
+//스택과 큐 -- 올바른 괄호
+//input = 괄호 string 
+//output = 괄호가 바르게 짝지어졌다는 불리언 값 
+
+function solution(s){
+    let stack = []
+    for(let i of s){
+        if(i == "("){
+            stack.push("(")
+        }
+        else{
+            if(stack.length == 0) return false
+            stack.pop()
+        }
+    }
+    if(stack.length == 0) return true
+    return false
+}
+
+//스택과 큐 -- 주식가격
+//input
+//output 
+
+prices = prices.reverse()
+let stack = []
+let answer = []
+
+for(let i = 0; i < prices.length;i++){
+    while(stack.length && stack[stack.length -1][0] >= prices[i]){
+        stack.pop()
+    }
+    if(stack.length == 0){
+        answer.push(i)
+    }
+    else{
+        answer.push(i-stack[stack.length-1][1])
+    }
+    stack.push([prices[i],i])
+}
+
+return answer.reverse();
+
+//정렬 
+//input = array,commands 
+//output = []
+
+function solution(array,commands){
+    let answer = []
+
+    for(let i = 0; i < commands.length; i++){
+        const first = commands[i][0] - 1
+        const second = commands[i][0]
+        const k = commands[i][2]
+
+        const subArr = array.slice(first,second).sort()
+        answer.push(subArr[k-1])
+    }
+
+    return answer
+}
