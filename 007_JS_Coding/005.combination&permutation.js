@@ -115,3 +115,24 @@ function combinationSum2(candidates,target){
     search(0,0)
     return res
 }
+
+//Permutation 
+
+function Permutation(arr){
+    let res = []
+    let current = []
+
+    function search(vals){
+        if(vals.length == 0){
+            res.push([...current])
+            return 
+        }
+        for(let i = 0; i < vals.length;i++){
+            current.push(vals[i])
+            search([...vals.slice(0,i),...vals.slice(i+1)])
+            current.pop()
+        }
+    }
+    search(arr)
+    return res
+}
