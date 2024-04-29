@@ -44,7 +44,7 @@ const longestSubstring = (s) => {
 //5. Longest Palindromic Substring
 //input = string(s)
 //output = string(s) --> s의 substring중, 길이가 제일 큰 palindrome을 찾기.
-
+//
 const longestPalindrome = (s) =>{
     const findPalindrome = (first,second) =>{
         while(first >= 0 && second < s.length && s[first] == s[second]){
