@@ -23,7 +23,6 @@ var addTwoNumbers = function(l1, l2) {
 //004 Length of Longest Substring 
 //input = s
 //output = 중복되지 않는 substring의 최대 길이
-
 const longestSubstring = (s) => {
     let seen = new Set();
     let first = 0;
